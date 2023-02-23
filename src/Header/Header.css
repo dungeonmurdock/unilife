@@ -1,0 +1,23 @@
+.header-container,
+.logo-container,
+.links-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    justify-content: space-evenly;
+    background-color: #00A2E1;
+    color: #FFF;
+    height: 60px;
+    
+}
+
+.logo-container {
+    justify-content: space-evenly;
+}
+
+.header-container img {
+    align-self: center;
+}
+
