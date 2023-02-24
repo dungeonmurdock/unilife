@@ -6,18 +6,34 @@
 }
 
 .header-container {
-    justify-content: space-evenly;
+    font-family: Epilogue;
+    justify-content: space-between;
     background-color: #00A2E1;
     color: #FFF;
     height: 60px;
-    
+    padding: 0px 30px;
 }
 
 .logo-container {
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
+.links-container {
+    justify-content: space-evenly;
+    width: 35%;
+}   
 
 .header-container img {
-    align-self: center;
+    align-self: center;    
+}
+
+.links-container img {
+    width: 8%;
+}
+
+.links-container h6 {
+    font-size: 10px;
+    width: 34%;
+    display: flex;
+    padding-top: 8px;
 }
 
