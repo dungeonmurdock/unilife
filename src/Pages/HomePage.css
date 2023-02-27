@@ -1,0 +1,16 @@
+.hype-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6FAFD;
+}
+
+.hype-box {
+    display:flex;
+    flex-direction: row;
+}
+
+.compare-box img {
+    height: 96px;
+    object-fit: cover;
+}
