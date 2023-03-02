@@ -12,6 +12,7 @@ export default function AllCitiesPage() {
                detailsText={"UniLife have student accommodation available across the UK. Whatever you’re after, we can help you find the right student accommodation for you. "}
                />
             </header>
+             <h2 style={{textAlign:"center", margin:"50px 0px 25px"}}>Search by City</h2>
               <AllCities />
     </div>
   )

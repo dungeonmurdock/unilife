@@ -8,7 +8,7 @@ export default function CityDetailsPage() {
             <header className="page-header">
                <Banner 
                headingText={"Search Accomodations"} 
-               detailsText={"Whatever you’re after, we can help you find the right student accommodation for you. "}
+               detailsText={"Whatever you`re after, we can help you find the right student accommodation for you. "}
                />
             </header>
     </div>

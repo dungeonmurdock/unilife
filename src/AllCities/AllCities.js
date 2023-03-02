@@ -11,7 +11,7 @@ export default function FeatureCities() {
         axios.get("https://unilife-server.herokuapp.com/cities?limit=20").then(res=>{setCities(res.data.response)}).catch((err)=> console.log(err));
     },[])
   return (
-    <div className="city-container">
+    <div className="city-container" style={{marginBottom:85}}>
         {cities?.map(item=> <CityButton city={item}/>)}
     </div>
   )

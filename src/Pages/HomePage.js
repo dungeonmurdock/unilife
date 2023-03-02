@@ -53,3 +53,28 @@ export default function HomePage () {
         </div>
     );
 }
+
+
+{/* <div className="hype-box">
+  <div class="card">
+   <img src={SearchIcon} class="card-img-top" alt="search-icon" style={{}}/>
+    <div class="card-body">
+      <h5 class="card-title">Search</h5>
+      <p class="card-text">Find your dream home in the perfect area near your university.</p>
+    </div>
+  </div>
+  <div class="card">
+   <img src={CompareIcon} class="card-img-top" alt="compare-icon" style={{}}/>
+    <div class="card-body">
+      <h5 class="card-title">Compare</h5>
+      <p class="card-text">Compare student accommodation to find the right home for you.</p>
+    </div>
+  </div>
+  <div class="card">
+   <img src={BillIcon} class="card-img-top" alt="bills-icon" style={{}}/>
+    <div class="card-body">
+      <h5 class="card-title">Bills Included</h5>
+      <p class="card-text">Bills are included in all rent prices. No hidden fees.</p>
+    </div>
+  </div>
+</div> */}
