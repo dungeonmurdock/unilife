@@ -1,30 +1,34 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-import "./CityCard.css";
+import "./PropertyCard.css";
 
-export default function CityCard({
+export default function PropertyCard({
     city,
        
 }) {
     const imageStyle = {
-        backgroundImage: `url(${city?.image_url})`,
+        backgroundImage: `url(${city?.images[0]})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
         height: 200,
         objectFit: "cover",
-        borderRadius:24,
     };
 
    return (
     <Link to={`/citydetails/${city?._id}`} style={{display: "inline-block", width: "28%", marginRight: 20, marginBottom: 20, textDecoration: "none", textAlign:"center"}}>
-    <div className='city-card' style={imageStyle}>
+    <div className='property-card' style={imageStyle}>
       
         
             <p>{city?.name}</p>
-            <p>{city?.property_count} properties</p>
+            <p>{city?.property_type}</p>
+            <p>{city?.bedroom_count}</p>
+            <p>{city?.bathroom_count}</p>
+            <p>{city?.furnished}</p>
+            <p>{city?.address?.street}</p>
+            
         
      
     </div>

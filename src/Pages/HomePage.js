@@ -23,8 +23,8 @@ export default function HomePage () {
             <div className="marketing-container">
                 <div className="hype-container">
                   <h2>Compare all inclusive students homes.</h2>
-                  <div className="hype-box">
-                    <div className="search-box">
+                  <div className="hype-box" style={{textAlign:"center"}}>
+                    <div className="search-box" >
                     <img src={SearchIcon} alt="search-icon" style={{}}/>
                     <h3>Search</h3>
                     <p>Find your dream home in the perfect area near your university.</p>  
@@ -53,28 +53,36 @@ export default function HomePage () {
         </div>
     );
 }
-
-
-{/* <div className="hype-box">
-  <div class="card">
-   <img src={SearchIcon} class="card-img-top" alt="search-icon" style={{}}/>
-    <div class="card-body">
-      <h5 class="card-title">Search</h5>
-      <p class="card-text">Find your dream home in the perfect area near your university.</p>
-    </div>
-  </div>
-  <div class="card">
-   <img src={CompareIcon} class="card-img-top" alt="compare-icon" style={{}}/>
-    <div class="card-body">
-      <h5 class="card-title">Compare</h5>
-      <p class="card-text">Compare student accommodation to find the right home for you.</p>
-    </div>
-  </div>
-  <div class="card">
-   <img src={BillIcon} class="card-img-top" alt="bills-icon" style={{}}/>
-    <div class="card-body">
-      <h5 class="card-title">Bills Included</h5>
-      <p class="card-text">Bills are included in all rent prices. No hidden fees.</p>
-    </div>
-  </div>
-</div> */}
+//  <div className="marketing-container">
+// <div className="hype-container">
+//   <h2>Compare all inclusive students homes.</h2>
+//  <div className="hype-box">
+//    <div className="row">
+//     <div className="col-12 col-md-4">
+//     <div className="card">
+//      <img src={SearchIcon} class="card-img-top" alt="search-icon" style={{}}/>
+//      <div className="card-body">
+//       <h5 className="card-title">Search</h5>
+//       <p className="card-text">Find your dream home in the perfect area near your university.</p>
+//      </div>
+//     </div>
+//     </div>
+//   <div className="card">
+//    <img src={CompareIcon} class="card-img-top" alt="compare-icon" style={{}}/>
+//     <div className="card-body">
+//       <h5 className="card-title">Compare</h5>
+//       <p className="card-text">Compare student accommodation to find the right home for you.</p>
+//     </div>
+//   </div>
+//   <div className="card">
+//    <img src={BillIcon} class="card-img-top" alt="bills-icon" style={{}}/>
+//     <div className="card-body">
+//       <h5 className="card-title">Bills Included</h5>
+//       <p className="card-text">Bills are included in all rent prices. No hidden fees.</p>
+//     </div>
+//   </div>
+//   </div>
+// </div>
+// </div>
+// <div/>
+// </div>

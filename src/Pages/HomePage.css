@@ -14,3 +14,9 @@
     height: 96px;
     object-fit: cover;
 }
+
+.search-box,
+.compare-box,
+.bills-box p {
+    text-align: center;
+}
