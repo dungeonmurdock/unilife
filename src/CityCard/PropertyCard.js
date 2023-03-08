@@ -13,25 +13,26 @@ export default function PropertyCard({
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
-        height: 200,
+        height: 350,
         objectFit: "cover",
+        
     };
 
    return (
-    <Link to={`/citydetails/${city?._id}`} style={{display: "inline-block", width: "28%", marginRight: 20, marginBottom: 20, textDecoration: "none", textAlign:"center"}}>
-    <div className='property-card' style={imageStyle}>
-      
-        
-            <p>{city?.name}</p>
-            <p>{city?.property_type}</p>
+    <Link to={`/homedetails/${city?._id}`} style={{display: "inline-block", marginRight: 20, marginBottom: 20, textDecoration: "none", textAlign:"center", width:"28%"}}>
+    <div className='property-card'>
+        <div className='img-box' style={imageStyle}></div>
+        <div className='stats-box'>  
+            <p>{city?.rent}</p>                     
             <p>{city?.bedroom_count}</p>
-            <p>{city?.bathroom_count}</p>
+            <p>{city?.bathroom_count}</p>                 
+        </div>
+        <div className='info-box'>
+            <p>{city?.property_type}</p>
             <p>{city?.furnished}</p>
-            <p>{city?.address?.street}</p>
-            
-        
-     
-    </div>
+            <p>{city?.address?.street}</p>  
+        </div>
+        </div>
     </Link>  
   )
 }

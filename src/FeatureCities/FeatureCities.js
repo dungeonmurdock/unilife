@@ -14,5 +14,6 @@ export default function FeatureCities() {
     <div className="city-container">
         {cities?.map(item=> <CityCard city={item}/>)}
     </div>
+    
   )
 }

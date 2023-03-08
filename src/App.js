@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/allcities/' element={<AllCitiesPage />} />
-      <Route path='/citydetails/:cityid' element={<CityDetailsPage />} />
+      <Route path='/citydetails/:cityid/:bedrooms?' element={<CityDetailsPage />} />
       <Route path='/homedetails/:propertyid' element={<HomeDetailsPage />} />
     </Routes>
     <Footer />

@@ -14,9 +14,9 @@ export default function CityDetailsPage() {
   const [properties, setProperties] = useState ([]);
   const {cityid} = useParams();
   const query = {query: {city_id: cityid}};
-console.log(cityid);
+
   useEffect(()=>{
-    axios.get(`https://unilife-server.herokuapp.com/cities/${cityid}`).then(res=>{setCity(res.data.data[0]);console.log(res)}).catch((err)=> console.log(err));
+    axios.get(`https://unilife-server.herokuapp.com/cities/${cityid}`).then(res=>{setCity(res.data.data[0]);}).catch((err)=> console.log(err));
     axios.post(`https://unilife-server.herokuapp.com/properties/filter/`,query).then(res=>{setProperties(res.data.response)}).catch((err)=> console.log(err));
     
 },[])
@@ -28,6 +28,7 @@ console.log(cityid);
                detailsText={"Whatever you`re after, we can help you find the right student accommodation for you. "}
                />
             </header>
+            <h2>{city?.property_count} homes in {city?.name}</h2>
             <CityProperties properties={properties}/>
             <div className='city-hype-card'>
             <div className="card mb-3" style={{maxWidth: "80%", borderRadius:24, backgroundColor:"#F6FAFD"}}>

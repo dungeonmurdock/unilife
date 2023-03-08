@@ -1,13 +1,105 @@
+.search-box,
+.compare-box,
+.bills-box p {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 128px;
+    width: 75%;
+    margin: 0;
+    position: absolute;
+    top: 342px;
+    left: 133px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.search-container select,
+button {
+    height: 60px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.search-container select {
+    width: 33%;
+    background: #fff;
+    border: 1px solid #CED3D8;    
+    color: #CED3D8;
+}
+
+.search-container option {
+    color: black;
+}
+
+.search-container button {
+    height: 60px;
+    width: 22%;
+    background-color: #3A5295;
+    color: #fff;
+    border: none;
+}
+
+.feature-title {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.all-cities-button {
+    background-color: #3A5295;
+    color: #fff;
+    width: 200px;
+    border: none;
+    margin-top: 40px;
+    margin-left: 630px;
+    margin-bottom: 40px;
+}
+
 .hype-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
     background-color: #F6FAFD;
+    border-radius: 24px;
+    position: relative;
+    left: 135px;
+}
+
+.hype-container h2 {
+    margin-top: 70px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .hype-box {
     display:flex;
     flex-direction: row;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hype-box h3 {
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hype-box p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 65px;
 }
 
 .compare-box img {
@@ -15,8 +107,48 @@
     object-fit: cover;
 }
 
-.search-box,
-.compare-box,
-.bills-box p {
-    text-align: center;
+.hype-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 105px;
+}
+
+.search-compare-box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.selection-container,
+.favourites-container {
+    display: flex;
+    width: 55%;
+}
+
+.selection-container img,
+.favourites-container img {
+    object-fit: cover;
+    height: 89px;
+}
+
+.selection-box h2,
+.fav-box h2 {
+   font-size: 28px;
+   font-weight: 600;
+}
+
+.selection-box p,
+.fav-box p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.compare-button {
+    width: 45%;
+    background-color: #3A5295;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
