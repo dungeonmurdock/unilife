@@ -1,22 +1,67 @@
 .property-card,
 .img-box,
-.stat-box,
-.info-box {
+.stats-box,
+.info-box,
+.rent-box,
+.bed-bath-box,
+.bedroom-box,
+.bathroom-box,
+.homeview-box {
     display: flex; 
-}    
+}   
+
+.bedroom-box,
+.bathroom-box,
+.info-box{
+    flex-direction: row;
+}
 
 .property-card {
-    flex-direction: column;
-    color: #e90c0c;
-    font-size: 32px;
+    flex-direction: column;    
     font-family: Arial, Helvetica, sans-serif;
-    padding: 40px;
-    border: 2px black;
-    border-radius: 24px;
+    padding: 40px;    
     width: 100%;
 } 
 
-.stat-box,
-.info-box {
-    flex-direction: row;
+.img-box{
+    border-radius: 12px 12px 0px 0px;
 }
+
+.stats-box{
+    color: #fff;
+    background-color: #3A5295;
+    width: 400px;
+    height: 80px;    
+}
+
+.rent-box,
+.bed-bath-box,
+.bedroom-box,
+.bathroom-box{
+    width: 50%;
+}
+
+.rent-box{
+    flex-direction: column;   
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.info-box,
+.homeview-box{    
+    border: 1px solid #ced3d8;
+    color: #000;
+}
+
+.info-box{
+    flex-wrap: wrap;
+    height: 100px;
+    font-weight: 600;
+}
+
+.homeview-box{
+    justify-content: center;
+    border-radius: 0px 0px 12px 12px;
+}
+
+

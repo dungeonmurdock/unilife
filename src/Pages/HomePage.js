@@ -20,6 +20,7 @@ export default function HomePage () {
   const [number, setNumber] = useState();
   const numbers = [1,2,3,4,5,6,7,8,];
   const navigate = useNavigate();
+
   useEffect(()=>{
       axios.get("https://unilife-server.herokuapp.com/cities?limit=20").then(res=>{setCities(res.data.response);console.log(res.data.response)}).catch((err)=> console.log(err));
   },[])
@@ -53,7 +54,7 @@ export default function HomePage () {
             </div>
             <h2 className="feature-title">Search accommodations in our top cities</h2>
             <FeatureCities />
-            <button className="all-cities-button" onClick={''}>See all cities</button>
+            <button className="all-cities-button" onClick={()=> navigate('/allcities')}>See all cities</button>
             <div className="marketing-container">
                 <div className="hype-container">
                   <h2>Compare all inclusive students homes.</h2>
