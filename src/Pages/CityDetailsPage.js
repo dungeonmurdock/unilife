@@ -22,14 +22,13 @@ export default function CityDetailsPage() {
   const navigate = useNavigate();
 
   useEffect(()=>{
-    axios.get(`https://unilife-server.herokuapp.com/cities/${cityid}`).then(res=>{setCity(res.data.data[0]);console.log(res.data.data[0])}).catch((err)=> console.log(err));
-    axios.post(`https://unilife-server.herokuapp.com/properties/filter/`,query).then(res=>{setProperties(res.data.response);setFilterProperty(res.data.response);console.log(res.data.response)}).catch((err)=> console.log(err));
+    axios.get(`https://unilife-server.herokuapp.com/cities/${cityid}`).then(res=>{setCity(res.data.data[0])}).catch((err)=> console.log(err));
+    axios.post(`https://unilife-server.herokuapp.com/properties/filter/`,query).then(res=>{setProperties(res.data.response);setFilterProperty(res.data.response)}).catch((err)=> console.log(err));
     
 },[])
 function filterBedroom (e) { 
   const numBedrooms = e.target.value;
   const filterBedrooms = properties.filter((property)=>property.bedroom_count >= numBedrooms);
-  console.log(filterBedrooms);
   setFilterProperty(filterBedrooms);
   return
 }
@@ -37,8 +36,7 @@ function filterBedroom (e) {
 function filterBathrooms (e) {
   
   const numBathrooms = e.target.value;
-  const filterBathrooms = properties.filter((property)=>property.bathroom_count >= numBathrooms);
-  console.log(filterBathrooms);
+  const filterBathrooms = properties.filter((property)=>property.bathroom_count >= numBathrooms); 
   setFilterProperty(filterBathrooms);
   return
 }
@@ -46,8 +44,7 @@ function filterBathrooms (e) {
 function filterPrice (e) {
   
   const numPrice = e.target.value;
-  const filterPrice = properties.filter((property)=>property.rent >= numPrice);
-  console.log(filterPrice);
+  const filterPrice = properties.filter((property)=>property.rent >= numPrice);  
   setFilterProperty(filterPrice);
   return
 }
@@ -55,8 +52,7 @@ function filterPrice (e) {
 function filterType (e) {
   
   const type = e.target.value;
-  const filterType = properties.filter((property)=>property.property_type >= type);
-  console.log(filterType);
+  const filterType = properties.filter((property)=>property.property_type >= type);  
   setFilterProperty(filterType);
   return
 }

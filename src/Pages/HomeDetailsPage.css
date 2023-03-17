@@ -1,12 +1,205 @@
+.return-button {
+    display: flex;
+    margin-left: 45px;
+}
 
+.return-button p {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 .top-box{
-    display: flex;
-    width: 100%;
+    display: flex;   
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .home-images,
-.Stats-Buttons{
+.stats-buttons{
+    width: 45%;
+}
+
+.stats-buttons {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.small-image-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.stat-block {
+    border: 1px solid #ced3d8;
+    border-radius: 24px;
+    height: 475px;
+}
+
+.address-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 25%;
+    border-bottom: 1px solid #ced3d8;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.stat-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.small-info-box {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom: 50px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.title p {
+    margin: 0 auto;
+    padding-top: 3px;
+}
+
+.icon-count {
+    display: flex;
+    justify-content: center;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 45px;
+    margin-top: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ced3d8;
+}
+
+.fav-button img {
+    max-width: 6%;
+}
+
+.fav-button p {
+    margin: 0;
+    padding-left: 5px;
+}
+
+.booking-modal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 45px;
+    margin-top: 15px;
+    background-color: #3A5295;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #ced3d8;
+}
+
+.booking-modal-button p {
+    margin: 0;
+    padding: 5px
+}
+
+.middle-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.description-box, 
+.room-prices-box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.description-box h2,
+.room-prices-box h2,
+.features-box h2 {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 0;
+}
+
+.description-box p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 20px 20px;
+}
+
+.bedroom-price-box {
+    border: 1px solid #CED3D8;
+    border-radius: 24px;
+    width: 90%;
+    font-size: 20px;
+}
+
+.bed-box {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: 1px solid #CED3D8;
+}
+
+.bed-box:last-child {
+    border-bottom: none;
+}
+
+.span1,
+.span2 {
+    display: flex;
+    align-items: center;
     width: 50%;
+    padding: 10px;
+}
+
+.span2 {
+    justify-content: end;
+}
+
+.features-box {
+    margin-left: 45px;
+    margin-bottom: 75px;
+}
+
+.features-box ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: 22px;
+    list-style-image: url('../asset/checkmark.svg');
+}
+
+.features-box li {
+    padding: 15px;
 }

@@ -1,6 +1,6 @@
 .city-hype-card,
-.bedroom-box,
-.bathroom-box,
+.bedrooms-box,
+.bathrooms-box,
 .price-box,
 .type-box{
     display: flex;
@@ -11,8 +11,8 @@
     margin: 40px 0px;
 }
 
-.bedroom-box,
-.bathroom-box,
+.bedrooms-box,
+.bathrooms-box,
 .price-box,
 .type-box{
     flex-direction: column;
@@ -52,6 +52,7 @@
     font-size: 36px;
     font-weight: 600;
     margin-top: 110px;
+    margin-left: 110px;
 }
 
 .city-hype-card{
@@ -71,4 +72,8 @@
 .card-text{
     font-size: 20px;
     font-weight: 400;
+}
+
+.col-md-8 img {
+    padding: 50px 0px 50px 125px;
 }

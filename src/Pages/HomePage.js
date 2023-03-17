@@ -22,7 +22,7 @@ export default function HomePage () {
   const navigate = useNavigate();
 
   useEffect(()=>{
-      axios.get("https://unilife-server.herokuapp.com/cities?limit=20").then(res=>{setCities(res.data.response);console.log(res.data.response)}).catch((err)=> console.log(err));
+      axios.get("https://unilife-server.herokuapp.com/cities?limit=20").then(res=>{setCities(res.data.response)}).catch((err)=> console.log(err));
   },[])
   function sendUser () {
     if (!cityid) {

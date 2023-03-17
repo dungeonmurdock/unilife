@@ -20,13 +20,8 @@ export default function CityButton({
 
    return (
     <Link to={`/citydetails/${city?._id}`} style={{color:"black", display: "inline-block", width: "22%", marginBottom: 20, textDecoration: "none", textAlign:"center"}}>
-    <div className='city-button' style={buttonStyle}>
-      
-        
-            <p style={{marginTop:"9px"}}>{city?.name}</p>
-            
-        
-     
+    <div className='city-button' style={buttonStyle}>       
+            <p style={{marginTop:"9px"}}>{city?.name}</p>     
     </div>
     </Link>  
   )

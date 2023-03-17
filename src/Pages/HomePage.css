@@ -1,6 +1,6 @@
 .search-box,
 .compare-box,
-.bills-box p {
+.bills-box  {
     text-align: center;
 }
 
@@ -151,4 +151,59 @@ button {
     border: none;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.tablet {
+    display: none;
+}
+
+.phone {
+    display:none;
+}
+
+@media (max-width: 768px) {
+    .tablet{
+        display: block;
+      }
+
+    .search-container {
+        height: 100px;
+        width: 94%;
+        left: 15px;
+    }
+
+    .search-container select,
+    .search-container button {
+        height: 40px;
+    }
+
+    .feature-title {
+        font-size: 24px;   
+    }
+
+    .all-cities-button {
+        height: 40px;
+        margin-left: 280px;
+    }
+
+    .hype-container {
+        width: 85%;
+        left: 50px;
+    }
+
+    .hype-box {
+        flex-direction: column;
+    }
+
+    .selection-container,
+    .favourites-container img,
+    .fav-box,
+    .image-box {
+        display: none;
+    }
+
+    .compare-button {
+        width: 100%;
+    }
+    
 }

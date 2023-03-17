@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
         <div className='copyright'>
            <h5>2023</h5>
-           <img src={copyright} alt="copyright" style={{ width: "1%" }} />
+           <img src={copyright} alt="copyright" style={{ width: "12%" }} />
            <h5>Unilife</h5>
         </div>
       </div></>

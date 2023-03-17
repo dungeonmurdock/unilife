@@ -59,6 +59,10 @@
     font-weight: 600;
 }
 
+.info-box p {
+    margin-block-start: auto;
+}    
+
 .homeview-box{
     justify-content: center;
     border-radius: 0px 0px 12px 12px;

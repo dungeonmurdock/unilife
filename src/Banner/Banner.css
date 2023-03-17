@@ -22,3 +22,25 @@
    padding: 0px 300px 100px 300px;
 }
 
+.tablet {
+   display: none;
+}
+
+.phone {
+   display:none;
+}
+
+@media (max-width: 768px) {
+   .tablet{
+       display: block;
+     }
+
+   .overlay-title{
+       font-size: 40px;
+       padding: 100px 125px 0px 125px;
+   }  
+
+   .overlay-text {
+      padding: 0px 125px 100px 125px;
+   }
+}
